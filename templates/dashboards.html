@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Building Monitoring — {{ page|replace('-', ' ')|title }}</title>
+<link rel="stylesheet" href="/static/dash/dashboards.css?v=2">
+</head>
+<body>
+{% set icons = {
+ 'overview':'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>',
+ 'energy':'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+ 'environment':'<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
+ 'occupancy':'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-4 3-6 6.5-6s6 2 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 1.5 4.5 5"/>',
+ 'safety':'<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/>',
+ 'floor-plan':'<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 12h8M12 3v9M12 16v5"/>',
+ 'reports':'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h7M9 17h7"/>',
+ 'settings':'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/>'} %}
+{% set labels = [('overview','Overview'),('energy','Energy'),('environment','Environment'),('occupancy','Occupancy'),('safety','Safety'),('floor-plan','Floor Plan'),('reports','Reports'),('settings','Settings')] %}
+<div class="shell">
+  <aside class="side" id="side" aria-label="Dashboards navigation">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 44V10l16-6v40M26 14h12v30M15 16h4M15 22h4M15 28h4M15 34h4M31 22h3M31 28h3M31 34h3"/></svg>
+      <b>Smart Building</b><span>Monitoring System</span>
+    </div>
+    <nav class="nav">
+      {% for key, label in labels %}
+      <a href="/dashboards/{{ key }}" data-nav="{{ key }}" {% if key == page %}class="active" aria-current="page"{% endif %}>
+        <svg viewBox="0 0 24 24" aria-hidden="true">{{ icons[key]|safe }}</svg>{{ label }}</a>
+      {% endfor %}
+    </nav>
+    <div class="foot">{{ user.name }} ({{ user.role }})<br>
+      <a href="{{ '/admin' if is_admin else '/client-portal' }}">&larr; {{ 'Admin console' if is_admin else 'My buildings' }}</a></div>
+  </aside>
+  <main class="main" id="app" data-page="{{ page }}" data-poll="{{ poll_ms }}" data-admin="{{ 1 if is_admin else 0 }}">
+    <noscript>JavaScript is required for the live dashboards.</noscript>
+  </main>
+</div>
+<script src="/static/dash/charts.js?v=2"></script>
+<script src="/static/dash/dashboards.js?v=2"></script>
+</body>
+</html>

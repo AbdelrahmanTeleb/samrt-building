@@ -1,0 +1,4 @@
+# Only needed to re-run tools/extract_floor_polygons.py (not needed to run the app)
+numpy
+scipy
+opencv-python-headless

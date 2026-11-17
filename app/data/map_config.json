@@ -1,0 +1,420 @@
+{
+ "campus": {
+  "image": "/static/images/university_campus_map.jpg",
+  "width": 609,
+  "height": 401,
+  "buildings": [
+   {
+    "code": "A",
+    "name": "Building A",
+    "x": 0.8949,
+    "y": 0.3741
+   },
+   {
+    "code": "B",
+    "name": "Building B",
+    "x": 0.3941,
+    "y": 0.5985
+   },
+   {
+    "code": "C",
+    "name": "Building C",
+    "x": 0.1642,
+    "y": 0.3367
+   },
+   {
+    "code": "D",
+    "name": "Building D",
+    "x": 0.6043,
+    "y": 0.2394
+   },
+   {
+    "code": "G",
+    "name": "Building G",
+    "x": 0.2906,
+    "y": 0.1197
+   },
+   {
+    "code": "N",
+    "name": "Building N",
+    "x": 0.3875,
+    "y": 0.0923
+   }
+  ]
+ },
+ "floor_plan": {
+  "image": "/static/images/university_floor_1_plan.png",
+  "width": 904,
+  "height": 608,
+  "title": "1 OG - Oskar-Morgenstern-Platz 1",
+  "building_code": null,
+  "rooms": [
+   {
+    "room_number": "01.624",
+    "label": "SR 2",
+    "room_type": "seminar",
+    "capacity": null,
+    "polygon": [
+     [
+      0.47898,
+      0.12336
+     ],
+     [
+      0.47013,
+      0.24671
+     ],
+     [
+      0.47566,
+      0.28783
+     ],
+     [
+      0.50553,
+      0.29112
+     ],
+     [
+      0.51327,
+      0.27467
+     ],
+     [
+      0.52876,
+      0.27796
+     ],
+     [
+      0.5365,
+      0.13158
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.625",
+    "label": "SR 3",
+    "room_type": "seminar",
+    "capacity": null,
+    "polygon": [
+     [
+      0.54204,
+      0.13158
+     ],
+     [
+      0.53429,
+      0.27961
+     ],
+     [
+      0.54757,
+      0.27961
+     ],
+     [
+      0.55531,
+      0.25658
+     ],
+     [
+      0.59513,
+      0.26151
+     ],
+     [
+      0.59956,
+      0.13816
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.629",
+    "label": "SR 4",
+    "room_type": "seminar",
+    "capacity": null,
+    "polygon": [
+     [
+      0.61062,
+      0.1398
+     ],
+     [
+      0.60177,
+      0.26151
+     ],
+     [
+      0.63606,
+      0.26645
+     ],
+     [
+      0.64381,
+      0.27796
+     ],
+     [
+      0.6427,
+      0.29276
+     ],
+     [
+      0.65708,
+      0.29441
+     ],
+     [
+      0.66482,
+      0.14803
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.630",
+    "label": "SR 5",
+    "room_type": "seminar",
+    "capacity": null,
+    "polygon": [
+     [
+      0.67588,
+      0.14803
+     ],
+     [
+      0.66814,
+      0.29605
+     ],
+     [
+      0.71681,
+      0.30099
+     ],
+     [
+      0.72677,
+      0.27467
+     ],
+     [
+      0.73119,
+      0.15461
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.632",
+    "label": "SR 6",
+    "room_type": "seminar",
+    "capacity": null,
+    "polygon": [
+     [
+      0.74226,
+      0.15625
+     ],
+     [
+      0.7323,
+      0.28289
+     ],
+     [
+      0.74336,
+      0.30592
+     ],
+     [
+      0.78982,
+      0.30428
+     ],
+     [
+      0.80088,
+      0.16283
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.634",
+    "label": "HS 6",
+    "room_type": "lecture_hall",
+    "capacity": null,
+    "polygon": [
+     [
+      0.52434,
+      0.36678
+     ],
+     [
+      0.52434,
+      0.62993
+     ],
+     [
+      0.71018,
+      0.60691
+     ],
+     [
+      0.71018,
+      0.3898
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.303",
+    "label": "HS 7",
+    "room_type": "lecture_hall",
+    "capacity": null,
+    "polygon": [
+     [
+      0.78982,
+      0.69243
+     ],
+     [
+      0.73783,
+      0.69408
+     ],
+     [
+      0.72898,
+      0.71875
+     ],
+     [
+      0.71903,
+      0.69572
+     ],
+     [
+      0.66814,
+      0.7023
+     ],
+     [
+      0.67588,
+      0.84704
+     ],
+     [
+      0.80088,
+      0.82895
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.305",
+    "label": "HS 8",
+    "room_type": "lecture_hall",
+    "capacity": null,
+    "polygon": [
+     [
+      0.65708,
+      0.70395
+     ],
+     [
+      0.63717,
+      0.70395
+     ],
+     [
+      0.63053,
+      0.73026
+     ],
+     [
+      0.55863,
+      0.74013
+     ],
+     [
+      0.54867,
+      0.71711
+     ],
+     [
+      0.53097,
+      0.71875
+     ],
+     [
+      0.54204,
+      0.8602
+     ],
+     [
+      0.66482,
+      0.85033
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "01.314",
+    "label": "HS 9",
+    "room_type": "lecture_hall",
+    "capacity": null,
+    "polygon": [
+     [
+      0.39712,
+      0.7352
+     ],
+     [
+      0.37942,
+      0.73684
+     ],
+     [
+      0.37168,
+      0.76316
+     ],
+     [
+      0.29757,
+      0.77138
+     ],
+     [
+      0.28872,
+      0.74836
+     ],
+     [
+      0.27544,
+      0.75
+     ],
+     [
+      0.26549,
+      0.76974
+     ],
+     [
+      0.27434,
+      0.81579
+     ],
+     [
+      0.27212,
+      0.89145
+     ],
+     [
+      0.40265,
+      0.88158
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   },
+   {
+    "room_number": "MENSA",
+    "label": "Mensa",
+    "room_type": "canteen",
+    "capacity": null,
+    "polygon": [
+     [
+      0.06416,
+      0.40789
+     ],
+     [
+      0.06416,
+      0.68586
+     ],
+     [
+      0.18473,
+      0.67105
+     ],
+     [
+      0.19912,
+      0.61349
+     ],
+     [
+      0.22013,
+      0.61349
+     ],
+     [
+      0.22788,
+      0.64803
+     ],
+     [
+      0.36283,
+      0.64967
+     ],
+     [
+      0.36394,
+      0.48684
+     ],
+     [
+      0.20022,
+      0.49178
+     ],
+     [
+      0.19248,
+      0.38158
+     ]
+    ],
+    "geometry_source": "colour-segmented from supplied plan; verify visually"
+   }
+  ]
+ }
+}
